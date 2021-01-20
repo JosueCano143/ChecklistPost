@@ -84,4 +84,4 @@ window.onload = function() {
 		!1
 	), "serviceWorker" in navigator &&
 		navigator.serviceWorker.register("/sw.js", { scope: "/" })
-};
+}; 
