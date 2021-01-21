@@ -81,6 +81,11 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #9eb5bf;
+  background-color: #edeff0;
+  background-color: #faf7ff;
+  background-color: #faf7ff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='152' height='152' viewBox='0 0 152 152'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='temple' fill='%238baba5' fill-opacity='0.29'%3E%3Cpath d='M152 150v2H0v-2h28v-8H8v-20H0v-2h8V80h42v20h20v42H30v8h90v-8H80v-42h20V80h42v40h8V30h-8v40h-42V50H80V8h40V0h2v8h20v20h8V0h2v150zm-2 0v-28h-8v20h-20v8h28zM82 30v18h18V30H82zm20 18h20v20h18V30h-20V10H82v18h20v20zm0 2v18h18V50h-18zm20-22h18V10h-18v18zm-54 92v-18H50v18h18zm-20-18H28V82H10v38h20v20h38v-18H48v-20zm0-2V82H30v18h18zm-20 22H10v18h18v-18zm54 0v18h38v-20h20V82h-18v20h-20v20H82zm18-20H82v18h18v-18zm2-2h18V82h-18v18zm20 40v-18h18v18h-18zM30 0h-2v8H8v20H0v2h8v40h42V50h20V8H30V0zm20 48h18V30H50v18zm18-20H48v20H28v20H10V30h20V10h38v18zM30 50h18v18H30V50zm-2-40H10v18h18V10z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 a {
   transition: all 0.2s ease;
@@ -105,6 +110,7 @@ a:hover {
   font-weight: 500;
   margin: 0.5em 0.2em 0.375em;
   text-align: center;
+  color: rgb(17, 17, 17);
 }
 .title a {
   color: #000000;
@@ -129,16 +135,17 @@ a:hover {
   cursor: pointer;
   transition: all 0.3s ease;
   letter-spacing: 0.025em;
-  color: inherit;
-  border: 1px solid #000000;
+  /* color: inherit; */
+  border: 1px solid #ffffff;
   border-radius: 3px;
   outline: 0;
-  background: #EEC41C;
+  background: #3b7781;
+  color:rgb(255, 255, 255);
   box-shadow: 0 4px 6px rgba(33, 16, 118, 0.11), 0 1px 3px rgba(33, 16, 118, 0.1);
 }
 .progress__reset:focus,
 .progress__reset:hover {
-  background: rgba(189, 106, 255, 0.8);
+  background: rgba(69, 131, 97, 0.8);
   box-shadow: 0 7px 14px rgba(33, 16, 118, 0.16), 0 3px 6px rgba(33, 16, 118, 0.2);
 }
 .progress__reset:active {
@@ -214,11 +221,11 @@ a:hover {
   height: 20px;
   cursor: pointer;
   transition: background 150ms ease;
-  border: 2px solid #211076;
+  border: 2px solid #105676c7;
   border-radius: 3px;
 }
 .checkbox:hover {
-  background: #40DEFE;
+  background: #60997c;
 }
 .checkbox:after {
   position: absolute;
@@ -230,7 +237,7 @@ a:hover {
   transition: all 325ms ease;
   transform: rotate(45deg) scale(0);
   opacity: 0;
-  border-right: 2px solid #00B8FD;
+  border-right: 2px solid #5ecff8;
   border-bottom: 2px solid #00B8FD;
 }
 .checklist-item__title {
@@ -242,10 +249,11 @@ a:hover {
   cursor: pointer;
   transition: color 250ms ease;
   vertical-align: top;
+  color:rgb(17, 17, 17);
 }
 .checklist-item__title:focus,
 .checklist-item__title:hover {
-  color: #dcdcdc;
+  color: #1b5361ea;
 }
 input[type=checkbox] {
   display: none;
@@ -327,7 +335,7 @@ input[type=checkbox]:checked ~ .checklist-item__title {
   transform: translateY(-50%);
   transform-origin: center center;
   outline: 1px solid transparent;
-  background: #211076;
+  background:  #03545a;
 }
 .line:after {
   display: block;
@@ -338,7 +346,7 @@ input[type=checkbox]:checked ~ .checklist-item__title {
   transform: rotate(90deg);
   transform-origin: center center;
   outline: 1px solid transparent;
-  background: #211076;
+  background: #03545a;
 }
 .closed.line {
   top: 45%;
